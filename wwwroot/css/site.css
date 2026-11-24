@@ -200,16 +200,16 @@
 
 .laptop-mockup-wrapper {
     position: absolute;
-    right: 3%;
-    bottom: 5%;
-    width: 66%;
-    max-width: 590px;
+    right: 4%;
+    bottom: 8%;
+    width: 55%;
+    max-width: 485px;
     z-index: 3;
     perspective: 1200px;
     transform: perspective(1200px) rotateY(-9deg) rotateX(4deg) rotateZ(1deg);
     transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), filter 0.45s ease;
     cursor: pointer;
-    filter: drop-shadow(0 22px 35px rgba(9, 38, 95, 0.28));
+    filter: drop-shadow(0 20px 32px rgba(9, 38, 95, 0.26));
 }
 
 .laptop-mockup-wrapper:hover {
@@ -322,16 +322,18 @@
 /* Responsive adjustments */
 @media (max-width: 991px) {
     .laptop-mockup-wrapper {
-        width: 78%;
-        right: 11%;
+        width: 68%;
+        max-width: 440px;
+        right: 12%;
         bottom: 6%;
     }
 }
 
 @media (max-width: 575px) {
     .laptop-mockup-wrapper {
-        width: 92%;
-        right: 4%;
+        width: 82%;
+        max-width: 380px;
+        right: 7%;
         bottom: 5%;
         transform: perspective(800px) rotateY(-4deg) rotateX(2deg);
     }
