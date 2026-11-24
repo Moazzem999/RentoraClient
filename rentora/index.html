@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Rentora — smart rent and property management for modern property owners.">
+  <title>Rentora — Smart Rent Management</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top rentora-nav">
+    <div class="container">
+      <a class="navbar-brand brand" href="#home" aria-label="Rentora home">
+        <span class="brand-mark"><i class="bi bi-houses-fill"></i></span>
+        <span><strong>Rentora</strong><small>Smart Rent Management</small></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mx-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+        </ul>
+        <div class="nav-actions d-flex gap-2 align-items-center">
+          <a class="btn btn-outline-primary btn-sm rounded-pill px-4" href="#login">Login</a>
+          <a class="btn btn-success btn-sm rounded-pill px-4" href="#pricing">Get Started Free <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="home" class="hero-section section-shell">
+      <div class="container">
+        <div class="hero-card">
+          <div class="hero-copy">
+            <span class="eyebrow">Smart Solution for Property Owners</span>
+            <h1>Manage Your<br>Properties &amp; Rents<br>Smarter with <span>Rentora</span></h1>
+            <p>Create multiple buildings, manage flats, track rents<br class="d-none d-md-block"> and get complete reports — all in one easy platform.</p>
+            <div class="d-flex flex-wrap gap-3 hero-buttons">
+              <a href="#pricing" class="btn btn-success btn-lg rounded-pill">Start Free Trial <i class="bi bi-arrow-right ms-1"></i></a>
+              <button class="btn btn-outline-primary btn-lg rounded-pill" data-bs-toggle="modal" data-bs-target="#demoModal"><i class="bi bi-play-circle me-1"></i> Watch Demo</button>
+            </div>
+          </div>
+          <div class="hero-art">
+            <div class="spark spark-one">✳</div><div class="spark spark-two">✳</div>
+            <img src="assets/building-hero.svg" alt="Modern apartment buildings surrounded by greenery" class="building-art">
+            <div class="dashboard-preview">
+              <div class="dash-top"><span class="mini-brand"><i class="bi bi-houses-fill"></i> Rentora</span><span class="dash-dots">● ● ●</span></div>
+              <div class="dash-body">
+                <aside><b>▦</b><b>⌂</b><b>♙</b><b>▤</b><b>⚙</b></aside>
+                <div class="dash-content">
+                  <div class="dash-welcome">Dashboard overview <small>Good morning, Admin!</small></div>
+                  <div class="dash-stats"><span><small>Total Buildings</small><b>12</b></span><span><small>Total Flats</small><b>84</b></span><span><small>Rent Collected</small><b>$24,850</b></span></div>
+                  <div class="dash-chart"><div class="chart-label">Monthly collection <b>+12.8%</b></div><svg viewBox="0 0 340 85" role="img" aria-label="Rising rent collection chart"><path d="M0 68 C30 62 40 72 70 50 S115 58 140 38 S180 52 210 24 S260 37 285 12 S320 20 340 4" fill="none" stroke="#2384ff" stroke-width="3"/><path d="M0 68 C30 62 40 72 70 50 S115 58 140 38 S180 52 210 24 S260 37 285 12 S320 20 340 4 L340 85 L0 85Z" fill="#2384ff" opacity=".08"/></svg></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-glow"></div>
+        </div>
+
+        <div class="quick-features row g-0 text-center">
+          <div class="col"><i class="bi bi-buildings"></i><strong>Multiple<br>Buildings</strong></div>
+          <div class="col"><i class="bi bi-house-door-fill"></i><strong>Flat Management</strong></div>
+          <div class="col"><i class="bi bi-people-fill"></i><strong>Tenant Management</strong></div>
+          <div class="col"><i class="bi bi-calendar2-check"></i><strong>Rent Collection</strong></div>
+          <div class="col"><i class="bi bi-bar-chart-fill"></i><strong>Powerful Reports</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-section section-pad">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5">
+            <span class="section-kicker">MADE FOR PROPERTY OWNERS</span>
+            <h2>Why Choose <span>Rentora?</span></h2>
+            <p class="section-lead">A complete and easy-to-use solution for landlords, property managers and real estate businesses.</p>
+            <ul class="check-list">
+              <li><i class="bi bi-check-circle-fill"></i> Manage Multiple Properties</li>
+              <li><i class="bi bi-check-circle-fill"></i> Automate Rent Collection</li>
+              <li><i class="bi bi-check-circle-fill"></i> Get Detailed Reports</li>
+              <li><i class="bi bi-check-circle-fill"></i> Secure &amp; Reliable Cloud Platform</li>
+            </ul>
+            <a href="#features" class="btn btn-success rounded-pill px-4">Explore Features <i class="bi bi-arrow-right ms-1"></i></a>
+          </div>
+          <div class="col-lg-7">
+            <div class="why-art">
+              <img src="assets/building-hero.svg" alt="Contemporary residential buildings" class="why-building">
+              <div class="trust-float"><i class="bi bi-shield-fill-check"></i><span><b>100%</b><small>Secure &amp; Reliable</small></span></div>
+              <div class="dot-pattern"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features-section section-pad">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-kicker">EVERYTHING IN ONE PLACE</span>
+          <h2>Powerful Features for Smart Rent Management</h2>
+          <p>Everything you need to manage your properties efficiently<br class="d-none d-md-block"> and grow your rental business.</p>
+        </div>
+        <div class="row g-3 feature-grid">
+          <div class="col-6 col-lg-3"><article class="feature-card"><i class="bi bi-buildings blue"></i><h3>Multiple Buildings</h3><p>Manage multiple buildings under one account.</p></article></div>
+          <div class="col-6 col-lg-3"><article class="feature-card"><i class="bi bi-house-fill green"></i><h3>Flat Management</h3><p>Add and manage flats with ease.</p></article></div>
+          <div class="col-6 col-lg-3"><article class="feature-card"><i class="bi bi-people-fill purple"></i><h3>Tenant Management</h3><p>Keep tenant details and lease agreements.</p></article></div>
+          <div class="col-6 col-lg-3"><article class="feature-card"><i class="bi bi-calendar2-check green"></i><h3>Automated Rent</h3><p>Get recurring rents and track collections.</p></article></div>
+          <div class="col-6 col-lg-3"><article class="feature-card"><i class="bi bi-file-earmark-bar-graph blue"></i><h3>Detailed Reports</h3><p>View financial reports and insights.</p></article></div>
+          <div class="col-6 col-lg-3"><article class="feature-card"><i class="bi bi-shield-fill-check green"></i><h3>Secure &amp; Reliable</h3><p>Your data is always protected.</p></article></div>
+          <div class="col-6 col-lg-3"><article class="feature-card"><i class="bi bi-cloud-check blue"></i><h3>Access Anywhere</h3><p>Manage from any device, anywhere.</p></article></div>
+          <div class="col-6 col-lg-3"><article class="feature-card"><i class="bi bi-headset purple"></i><h3>Dedicated Support</h3><p>Get help whenever you need.</p></article></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="pricing-section section-pad">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-kicker">SIMPLE, TRANSPARENT PRICING</span>
+          <h2>Choose the Perfect Plan</h2>
+          <p>Choose the perfect plan for your business.</p>
+        </div>
+        <div class="row g-4 justify-content-center pricing-row">
+          <div class="col-md-4"><article class="price-card"><h3>Starter</h3><p>Perfect for small landlords</p><div class="price">$9 <small>/ month</small></div><ul><li>Up to 3 Buildings</li><li>Up to 30 Flats</li><li>Basic Reports</li><li>Email Support</li></ul><a href="#get-started" class="btn btn-outline-primary rounded-pill w-100">Start Free Trial</a></article></div>
+          <div class="col-md-4"><article class="price-card popular"><span class="popular-tag">Most Popular</span><h3>Professional</h3><p>For growing businesses</p><div class="price">$19 <small>/ month</small></div><ul><li>Up to 10 Buildings</li><li>Up to 100 Flats</li><li>Advanced Reports</li><li>Priority Support</li></ul><a href="#get-started" class="btn btn-success rounded-pill w-100">Start Free Trial</a></article></div>
+          <div class="col-md-4"><article class="price-card"><h3>Enterprise</h3><p>For large portfolios</p><div class="price">$49 <small>/ month</small></div><ul><li>Unlimited Buildings</li><li>Unlimited Flats</li><li>Custom Reports</li><li>Dedicated Support</li></ul><a href="#get-started" class="btn btn-outline-primary rounded-pill w-100">Contact Us</a></article></div>
+        </div>
+        <p class="pricing-note"><i class="bi bi-lock-fill"></i> No hidden fees. Change or cancel your plan anytime.</p>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials-section section-pad">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-kicker">CUSTOMER STORIES</span>
+          <h2>Trusted by Property Owners<br>Across the Country</h2>
+          <p>See what our customers have to say about Rentora.</p>
+        </div>
+        <div class="row g-3 testimonial-row">
+          <div class="col-md-4"><article class="testimonial-card"><div class="avatar avatar-one">TR</div><div class="stars">★★★★★</div><blockquote>“Rentora has simplified our rent management. The dashboard is amazing!”</blockquote><b>Tariq Rahman</b><small>Property Owner</small></article></div>
+          <div class="col-md-4"><article class="testimonial-card"><div class="avatar avatar-two">SA</div><div class="stars">★★★★★</div><blockquote>“Excellent support and feature-rich platform. Highly recommended!”</blockquote><b>Sadia Akter</b><small>Real Estate Business</small></article></div>
+          <div class="col-md-4"><article class="testimonial-card"><div class="avatar avatar-three">MA</div><div class="stars">★★★★★</div><blockquote>“A must-have tool for landlords. Very easy to use!”</blockquote><b>Mohammad Ali</b><small>Landlord</small></article></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq-section section-pad">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7">
+            <span class="section-kicker">GOT QUESTIONS?</span>
+            <h2>Frequently Asked Questions</h2>
+            <p class="section-lead">Find answers to common questions about Rentora.</p>
+            <div class="accordion rentora-accordion" id="faqAccordion">
+              <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true">How does Rentora work?</button></h3><div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion"><div class="accordion-body">Create your buildings, add flats and tenants, then generate monthly bills and track rent collection from one dashboard.</div></div></div>
+              <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">Can I manage multiple buildings?</button></h3><div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Yes. You can organize multiple buildings and manage the flats and tenants within each property.</div></div></div>
+              <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">Is my data secure?</button></h3><div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Rentora is designed with secure access and privacy in mind. Production security depends on your deployed backend and hosting configuration.</div></div></div>
+              <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">Can I cancel anytime?</button></h3><div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Yes. You can change or cancel your subscription at any time.</div></div></div>
+              <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">Do you provide customer support?</button></h3><div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Yes. Support is available, with priority and dedicated options on higher plans.</div></div></div>
+            </div>
+          </div>
+          <div class="col-lg-5"><div class="faq-visual"><div class="question-mark">?</div><div class="person-illustration"><i class="bi bi-person-standing"></i></div><span class="faq-spark">✳</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section section-pad">
+      <div class="container">
+        <div class="about-card row align-items-center g-4">
+          <div class="col-lg-6"><span class="section-kicker">ABOUT RENTORA</span><h2>Building a smarter way to manage rentals.</h2><p>Rentora is a modern SaaS platform designed to help landlords, property managers and real estate businesses manage their properties, collect rent and grow their business effortlessly.</p><a href="#get-started" class="btn btn-success rounded-pill px-4">Learn More <i class="bi bi-arrow-right ms-1"></i></a></div>
+          <div class="col-lg-6"><img src="assets/building-hero.svg" alt="Modern rental property illustration" class="about-building"></div>
+        </div>
+        <div class="row g-3 values-row">
+          <div class="col-md-4"><div class="value-card"><i class="bi bi-heart-fill"></i><b>Our Mission</b><small>Simplify property management.</small></div></div>
+          <div class="col-md-4"><div class="value-card"><i class="bi bi-eye-fill"></i><b>Our Vision</b><small>Smarter property management for all.</small></div></div>
+          <div class="col-md-4"><div class="value-card"><i class="bi bi-gem"></i><b>Our Values</b><small>Innovation, trust, and excellence.</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="get-started" class="cta-section">
+      <div class="container"><div class="cta-card"><div class="cta-icon"><i class="bi bi-buildings-fill"></i></div><div><h2>Ready to Get Started?</h2><p>Join Rentora today and take control of your properties.</p></div><a href="#pricing" class="btn btn-success btn-lg rounded-pill ms-lg-auto">Start Free Trial <i class="bi bi-arrow-right ms-1"></i></a></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="navbar-brand brand" href="#home"><span class="brand-mark"><i class="bi bi-houses-fill"></i></span><span><strong>Rentora</strong><small>Smart Rent Management</small></span></a>
+      <div class="footer-links"><a href="#features">Features</a><a href="#pricing">Pricing</a><a href="#faq">About</a><a href="#get-started">Contact</a></div>
+      <div class="social-links"><a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a><a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a><a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a><a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a></div>
+      <small class="copyright">© 2026 Rentora. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered"><div class="modal-content demo-modal"><div class="modal-header border-0"><h5 class="modal-title" id="demoModalLabel">Discover Rentora</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body text-center"><div class="demo-play"><i class="bi bi-play-fill"></i></div><h3>Your rental business, simplified.</h3><p>This demo area is ready for your product walkthrough video. Add your video embed here when available.</p></div></div></div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
