@@ -193,3 +193,146 @@
 .back-home-link:hover {
     color: #1769f5;
 }
+
+/* ==========================================================================
+   Open Laptop Screen Mockup (Hero Section)
+   ========================================================================== */
+
+.laptop-mockup-wrapper {
+    position: absolute;
+    right: 3%;
+    bottom: 5%;
+    width: 66%;
+    max-width: 590px;
+    z-index: 3;
+    perspective: 1200px;
+    transform: perspective(1200px) rotateY(-9deg) rotateX(4deg) rotateZ(1deg);
+    transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), filter 0.45s ease;
+    cursor: pointer;
+    filter: drop-shadow(0 22px 35px rgba(9, 38, 95, 0.28));
+}
+
+.laptop-mockup-wrapper:hover {
+    transform: perspective(1200px) rotateY(-4deg) rotateX(2deg) rotateZ(0deg) scale(1.025);
+    filter: drop-shadow(0 28px 45px rgba(9, 38, 95, 0.36));
+}
+
+.laptop-mockup {
+    position: relative;
+    width: 100%;
+}
+
+/* Laptop Screen / Lid */
+.laptop-lid {
+    position: relative;
+    background: #0f172a;
+    border: 3.5px solid #334155;
+    border-bottom: 2px solid #1e293b;
+    border-radius: 14px 14px 0 0;
+    padding: 7px 7px 3px 7px;
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.35), 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Webcam dot with reflection */
+.laptop-camera {
+    width: 5px;
+    height: 5px;
+    background: #020617;
+    border: 1px solid #475569;
+    border-radius: 50%;
+    margin: 0 auto 5px auto;
+    position: relative;
+}
+
+.laptop-camera::after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 2px;
+    height: 2px;
+    background: #38bdf8;
+    border-radius: 50%;
+    opacity: 0.7;
+}
+
+/* Display Screen */
+.laptop-screen {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #0b1528;
+    aspect-ratio: 1024 / 682;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.laptop-screen .dashboard-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: top left;
+}
+
+/* Subtle glossy glare reflection */
+.laptop-glare {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: linear-gradient(125deg, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0.03) 40%, transparent 60%);
+}
+
+/* Laptop Base / Lower Keyboard Chassis */
+.laptop-base {
+    position: relative;
+    height: 14px;
+    background: linear-gradient(to bottom, #e2e8f0 0%, #cbd5e1 45%, #64748b 100%);
+    border-radius: 0 0 16px 16px;
+    margin: 0 -4%;
+    box-shadow: 0 5px 12px rgba(15, 23, 42, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+/* Laptop notch */
+.laptop-notch {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 62px;
+    height: 4px;
+    background: #475569;
+    border-radius: 0 0 5px 5px;
+}
+
+/* Ambient shadow cast on surface */
+.laptop-shadow {
+    position: absolute;
+    bottom: -18px;
+    left: 2%;
+    width: 96%;
+    height: 20px;
+    background: radial-gradient(ellipse at center, rgba(9, 38, 95, 0.45) 0%, rgba(9, 38, 95, 0) 75%);
+    filter: blur(5px);
+    pointer-events: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .laptop-mockup-wrapper {
+        width: 78%;
+        right: 11%;
+        bottom: 6%;
+    }
+}
+
+@media (max-width: 575px) {
+    .laptop-mockup-wrapper {
+        width: 92%;
+        right: 4%;
+        bottom: 5%;
+        transform: perspective(800px) rotateY(-4deg) rotateX(2deg);
+    }
+}

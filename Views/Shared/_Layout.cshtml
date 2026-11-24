@@ -67,18 +67,19 @@
         </div>
     </footer>
 
-    <!-- Video Demo Modal -->
+    <!-- Video / Product Demo Modal -->
     <div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content demo-modal">
-                <div class="modal-header border-0">
-                    <h5 class="modal-title" id="demoModalLabel">Discover Rentora</h5>
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content demo-modal border-0 shadow-lg" style="border-radius: 20px; overflow: hidden;">
+                <div class="modal-header border-0 pb-0 px-4 pt-4 d-flex justify-content-between align-items-center">
+                    <div>
+                        <h4 class="modal-title fw-bold" id="demoModalLabel" style="color: var(--navy);">Rentora Interactive Dashboard</h4>
+                        <p class="text-muted small mb-0">High-performance real-time property, flat, tenant &amp; rent collection overview.</p>
+                    </div>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body text-center">
-                    <div class="demo-play"><i class="bi bi-play-fill"></i></div>
-                    <h3>Your rental business, simplified.</h3>
-                    <p>This demo area is ready for your product walkthrough video. Add your video embed here when available.</p>
+                <div class="modal-body p-4 text-center">
+                    <img src="~/assets/dashboard-screen.jpg" alt="Rentora Smart Rent Management Live Dashboard" class="img-fluid rounded-3 shadow-sm border" asp-append-version="true" style="max-height: 75vh; object-fit: contain;">
                 </div>
             </div>
         </div>

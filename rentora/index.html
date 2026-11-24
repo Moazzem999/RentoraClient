@@ -52,15 +52,24 @@
           <div class="hero-art">
             <div class="spark spark-one">✳</div><div class="spark spark-two">✳</div>
             <img src="assets/building-hero.svg" alt="Modern apartment buildings surrounded by greenery" class="building-art">
-            <div class="dashboard-preview">
-              <div class="dash-top"><span class="mini-brand"><img src="assets/rentora-icon.png" alt="Rentora" class="mini-brand-icon"> Rentora</span><span class="dash-dots">● ● ●</span></div>
-              <div class="dash-body">
-                <aside><b>▦</b><b>⌂</b><b>♙</b><b>▤</b><b>⚙</b></aside>
-                <div class="dash-content">
-                  <div class="dash-welcome">Dashboard overview <small>Good morning, Admin!</small></div>
-                  <div class="dash-stats"><span><small>Total Buildings</small><b>12</b></span><span><small>Total Flats</small><b>84</b></span><span><small>Rent Collected</small><b>$24,850</b></span></div>
-                  <div class="dash-chart"><div class="chart-label">Monthly collection <b>+12.8%</b></div><svg viewBox="0 0 340 85" role="img" aria-label="Rising rent collection chart"><path d="M0 68 C30 62 40 72 70 50 S115 58 140 38 S180 52 210 24 S260 37 285 12 S320 20 340 4" fill="none" stroke="#2384ff" stroke-width="3"/><path d="M0 68 C30 62 40 72 70 50 S115 58 140 38 S180 52 210 24 S260 37 285 12 S320 20 340 4 L340 85 L0 85Z" fill="#2384ff" opacity=".08"/></svg></div>
+            
+            <!-- Open Laptop Screen Mockup -->
+            <div class="laptop-mockup-wrapper" title="Click to view Rentora Dashboard" data-bs-toggle="modal" data-bs-target="#demoModal">
+              <div class="laptop-mockup">
+                <!-- Laptop Screen (Lid) -->
+                <div class="laptop-lid">
+                  <div class="laptop-camera"></div>
+                  <div class="laptop-screen">
+                    <img src="assets/dashboard-screen.jpg" alt="Rentora Smart Rent Management Dashboard" class="dashboard-img">
+                    <div class="laptop-glare"></div>
+                  </div>
                 </div>
+                <!-- Laptop Base (Keyboard Deck) -->
+                <div class="laptop-base">
+                  <div class="laptop-notch"></div>
+                </div>
+                <!-- Ambient Base Shadow -->
+                <div class="laptop-shadow"></div>
               </div>
             </div>
           </div>
@@ -203,7 +212,20 @@
   </footer>
 
   <div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered"><div class="modal-content demo-modal"><div class="modal-header border-0"><h5 class="modal-title" id="demoModalLabel">Discover Rentora</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body text-center"><div class="demo-play"><i class="bi bi-play-fill"></i></div><h3>Your rental business, simplified.</h3><p>This demo area is ready for your product walkthrough video. Add your video embed here when available.</p></div></div></div>
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content demo-modal border-0 shadow-lg" style="border-radius: 20px; overflow: hidden;">
+        <div class="modal-header border-0 pb-0 px-4 pt-4 d-flex justify-content-between align-items-center">
+          <div>
+            <h4 class="modal-title fw-bold" id="demoModalLabel" style="color: #09265f;">Rentora Interactive Dashboard</h4>
+            <p class="text-muted small mb-0">Real-time property, flat, tenant &amp; rent collection overview.</p>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4 text-center">
+          <img src="assets/dashboard-screen.jpg" alt="Rentora Smart Rent Management Live Dashboard" class="img-fluid rounded-3 shadow-sm border" style="max-height: 75vh; object-fit: contain;">
+        </div>
+      </div>
+    </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
