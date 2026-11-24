@@ -41,3 +41,30 @@ window.RentoraApp = window.RentoraApp || {
         document.cookie = 'rentora_auth_token=; path=/; max-age=0; SameSite=Lax';
     }
 };
+
+/* ==========================================================================
+   Dark / Light Theme Manager
+   ========================================================================== */
+
+function initThemeManager() {
+    const toggleBtns = document.querySelectorAll('#themeToggleBtn, .btn-theme-toggle');
+    if (!toggleBtns || toggleBtns.length === 0) return;
+
+    function applyTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('rentora_theme', theme);
+    }
+
+    toggleBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const currentTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            applyTheme(newTheme);
+        });
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    initThemeManager();
+});

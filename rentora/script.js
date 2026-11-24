@@ -25,4 +25,16 @@ document.addEventListener("DOMContentLoaded", () => {
       alert("Connect your Rentora login page or authentication flow here.");
     });
   });
+
+  // Theme Toggle Handler
+  const toggleBtns = document.querySelectorAll('#themeToggleBtn, .btn-theme-toggle');
+  toggleBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const currentTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('rentora_theme', newTheme);
+    });
+  });
 });
