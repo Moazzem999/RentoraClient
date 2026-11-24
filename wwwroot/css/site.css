@@ -198,6 +198,48 @@
    Modern Architectural Building (Hero Background) & Laptop Mockup
    ========================================================================== */
 
+/* Why Choose Section - Modern Apartment Image */
+.why-art {
+    height: 350px;
+    position: relative;
+    border-radius: 22px;
+    background: linear-gradient(145deg, #d6eaff 0%, #f6fbff 100%);
+    overflow: hidden;
+    border: 1px solid #dce8fa;
+    box-shadow: 0 10px 28px rgba(29, 91, 177, 0.08);
+}
+
+.why-building-modern {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center bottom;
+    position: relative;
+    z-index: 1;
+    border-radius: 22px;
+    transition: transform 0.45s ease;
+}
+
+.why-art:hover .why-building-modern {
+    transform: scale(1.025);
+}
+
+.trust-float {
+    position: absolute;
+    right: 2%;
+    bottom: 12%;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(10px);
+    padding: 12px 18px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 10px 25px rgba(15, 34, 64, 0.18);
+    border: 1px solid rgba(220, 235, 255, 0.8);
+}
+
 .building-art-modern {
     position: absolute;
     right: 0;
