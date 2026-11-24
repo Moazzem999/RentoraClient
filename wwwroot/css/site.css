@@ -2312,22 +2312,50 @@ body,
 }
 
 .support-modal-header {
-    background: linear-gradient(135deg, #1255cc 0%, #1769f5 50%, #4338ca 100%) !important;
-    padding: 24px 28px !important;
+    background: linear-gradient(135deg, #edf5ff 0%, #f8fbff 50%, #e6f0fa 100%) !important;
+    border-bottom: 1.5px solid #dce8fa !important;
+    padding: 22px 28px !important;
 }
 
 .support-header-icon-box {
     width: 48px;
     height: 48px;
     border-radius: 14px;
-    background: rgba(255, 255, 255, 0.18);
-    backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: #ffffff !important;
+    border: 1.5px solid #d2e2fa !important;
+    box-shadow: 0 4px 14px rgba(23, 105, 245, 0.08) !important;
     display: grid;
     place-items: center;
-    font-size: 24px;
-    color: #ffffff;
     flex-shrink: 0;
+}
+
+.support-header-brand-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.support-header-title {
+    color: #09265f !important;
+    font-size: 20px !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.3px;
+}
+
+.support-header-desc {
+    color: #455a7f !important;
+    font-size: 13px !important;
+    line-height: 1.5;
+}
+
+.support-header-close {
+    opacity: 0.65;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.support-header-close:hover {
+    opacity: 1;
+    transform: scale(1.1);
 }
 
 .support-form-label {
@@ -2418,8 +2446,26 @@ body,
 }
 
 [data-theme="dark"] .support-modal-header {
-    background: linear-gradient(135deg, #0a1f4a 0%, #0e3073 50%, #201754 100%) !important;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+    background: linear-gradient(135deg, #0d172a 0%, #111e38 50%, #0c1626 100%) !important;
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+[data-theme="dark"] .support-header-icon-box {
+    background: rgba(17, 27, 49, 0.95) !important;
+    border: 1.5px solid rgba(255, 255, 255, 0.12) !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5) !important;
+}
+
+[data-theme="dark"] .support-header-title {
+    color: #ffffff !important;
+}
+
+[data-theme="dark"] .support-header-desc {
+    color: #94a3b8 !important;
+}
+
+[data-theme="dark"] .support-header-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
 }
 
 [data-theme="dark"] .support-form-label {
