@@ -155,6 +155,11 @@
     transition: border-color 0.2s, box-shadow 0.2s;
 }
 
+.rentora-auth-card .form-control::placeholder {
+    color: #94a3b8;
+    opacity: 0.8;
+}
+
 .rentora-auth-card .form-control:focus,
 .rentora-auth-card .form-select:focus {
     border-color: #1769f5;
@@ -1194,6 +1199,67 @@ body,
     background-color: #0c1527 !important;
     border-color: #243550 !important;
     color: #f1f5f9 !important;
+}
+
+/* Auth Inputs Placeholder in Dark Mode */
+[data-theme="dark"] .form-control::placeholder,
+[data-theme="dark"] .form-select::placeholder,
+[data-theme="dark"] .rentora-auth-card .form-control::placeholder {
+    color: #94a3b8 !important;
+    opacity: 0.85 !important;
+}
+
+[data-theme="dark"] .form-control::-webkit-input-placeholder,
+[data-theme="dark"] .rentora-auth-card .form-control::-webkit-input-placeholder {
+    color: #94a3b8 !important;
+    opacity: 0.85 !important;
+}
+
+[data-theme="dark"] .form-control::-moz-placeholder,
+[data-theme="dark"] .rentora-auth-card .form-control::-moz-placeholder {
+    color: #94a3b8 !important;
+    opacity: 0.85 !important;
+}
+
+[data-theme="dark"] .form-control:-ms-input-placeholder,
+[data-theme="dark"] .rentora-auth-card .form-control:-ms-input-placeholder {
+    color: #94a3b8 !important;
+    opacity: 0.85 !important;
+}
+
+/* Checkboxes, muted labels and links (Forgot?, Remember me, Terms) */
+[data-theme="dark"] .rentora-auth-card .text-muted,
+[data-theme="dark"] .rentora-auth-card .form-check-label {
+    color: #94a3b8 !important;
+}
+
+[data-theme="dark"] .rentora-auth-card a.text-muted {
+    color: #94a3b8 !important;
+    transition: color 0.2s ease;
+}
+
+[data-theme="dark"] .rentora-auth-card a.text-muted:hover {
+    color: #38bdf8 !important;
+    text-decoration: underline !important;
+}
+
+[data-theme="dark"] .rentora-auth-card .form-check-label a {
+    color: #38bdf8 !important;
+}
+
+[data-theme="dark"] .rentora-auth-card .form-check-label a:hover {
+    color: #7dd3fc !important;
+    text-decoration: underline !important;
+}
+
+[data-theme="dark"] .form-check-input {
+    background-color: #0c1527 !important;
+    border-color: #243550 !important;
+}
+
+[data-theme="dark"] .form-check-input:checked {
+    background-color: #16b64e !important;
+    border-color: #16b64e !important;
 }
 
 [data-theme="dark"] .rentora-auth-card .form-control:focus,
