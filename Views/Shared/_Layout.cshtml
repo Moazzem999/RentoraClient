@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Rentora — smart rent and property management for modern property owners.">
     <title>@ViewData["Title"]@(ViewData["Title"] != null ? " - " : "")Rentora — Smart Rent Management</title>
+    <link rel="icon" type="image/png" href="~/assets/rentora-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -17,9 +18,8 @@
     <!-- Main Top Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top rentora-nav">
         <div class="container">
-            <a class="navbar-brand brand" asp-controller="Home" asp-action="Index" aria-label="Rentora home">
-                <span class="brand-mark"><i class="bi bi-houses-fill"></i></span>
-                <span><strong>Rentora</strong><small>Smart Rent Management</small></span>
+            <a class="navbar-brand brand p-0" asp-controller="Home" asp-action="Index" aria-label="Rentora home">
+                <img src="~/assets/rentora-logo.png" alt="Rentora — Smart Rent Management" class="rentora-nav-logo" asp-append-version="true">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -48,9 +48,8 @@
     <!-- Site Footer -->
     <footer class="site-footer">
         <div class="container footer-inner">
-            <a class="navbar-brand brand" asp-controller="Home" asp-action="Index">
-                <span class="brand-mark"><i class="bi bi-houses-fill"></i></span>
-                <span><strong>Rentora</strong><small>Smart Rent Management</small></span>
+            <a class="navbar-brand brand p-0" asp-controller="Home" asp-action="Index" aria-label="Rentora">
+                <img src="~/assets/rentora-logo.png" alt="Rentora — Smart Rent Management" class="rentora-footer-logo" asp-append-version="true">
             </a>
             <div class="footer-links">
                 <a href="/#features">Features</a>
