@@ -395,3 +395,103 @@
         transform: perspective(800px) rotateY(-4deg) rotateX(2deg);
     }
 }
+
+/* ==========================================================================
+   Navigation & Quick Features Typography Enhancements (Bigger & Bolder)
+   ========================================================================== */
+
+/* Navbar links - Bigger and Bolder */
+.rentora-nav .navbar-nav .nav-link,
+.rentora-nav .nav-link {
+    font-size: 15.5px !important;
+    font-weight: 700 !important;
+    color: #0b2554 !important;
+    padding: 8px 16px !important;
+    letter-spacing: -0.2px;
+    transition: color 0.2s ease;
+}
+
+.rentora-nav .nav-link:hover,
+.rentora-nav .nav-link.active {
+    color: #1769f5 !important;
+}
+
+/* Nav Action Buttons - Bigger and Bolder */
+.nav-actions .btn {
+    font-size: 14.5px !important;
+    font-weight: 700 !important;
+    padding: 9px 24px !important;
+    letter-spacing: -0.2px;
+}
+
+.nav-actions .btn-outline-primary {
+    border-width: 1.5px !important;
+    border-color: #9bbdff !important;
+    color: #0d4dc3 !important;
+}
+
+.nav-actions .btn-success {
+    box-shadow: 0 4px 14px rgba(18, 173, 75, 0.28) !important;
+}
+
+/* Quick Features Banner - Bigger and Bolder */
+.quick-features {
+    padding: 22px 14px !important;
+    border-radius: 18px !important;
+    border: 1px solid #d4e4fc !important;
+    box-shadow: 0 8px 24px rgba(36, 88, 160, 0.08) !important;
+    background: rgba(255, 255, 255, 0.92) !important;
+    backdrop-filter: blur(10px);
+}
+
+.quick-features .col {
+    gap: 10px !important;
+    padding: 6px 12px !important;
+}
+
+.quick-features i {
+    font-size: 32px !important;
+    color: #1467f4 !important;
+    display: inline-block;
+    transition: transform 0.25s ease;
+}
+
+.quick-features .col:hover i {
+    transform: translateY(-3px) scale(1.08);
+}
+
+.quick-features strong {
+    font-size: 15px !important;
+    font-weight: 800 !important;
+    color: #09265f !important;
+    letter-spacing: -0.3px;
+    line-height: 1.35 !important;
+    display: block;
+}
+
+/* Tablet & Mobile responsive overrides */
+@media (max-width: 991px) {
+    .rentora-nav .navbar-nav .nav-link,
+    .rentora-nav .nav-link {
+        font-size: 15px !important;
+        padding: 10px 0 !important;
+    }
+    
+    .quick-features strong {
+        font-size: 13.5px !important;
+    }
+
+    .quick-features i {
+        font-size: 28px !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .quick-features strong {
+        font-size: 12.5px !important;
+    }
+    
+    .quick-features i {
+        font-size: 24px !important;
+    }
+}
