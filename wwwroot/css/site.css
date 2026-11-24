@@ -464,7 +464,7 @@
     box-shadow: 0 4px 14px rgba(18, 173, 75, 0.28) !important;
 }
 
-/* Quick Features Banner - Bigger and Bolder */
+/* Quick Features Banner - Ultra-Fluid Modern Hover */
 .quick-features {
     padding: 22px 14px !important;
     border-radius: 18px !important;
@@ -472,22 +472,41 @@
     box-shadow: 0 8px 24px rgba(36, 88, 160, 0.08) !important;
     background: rgba(255, 255, 255, 0.92) !important;
     backdrop-filter: blur(10px);
+    transition: box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease !important;
+}
+
+.quick-features:hover {
+    box-shadow: 0 12px 32px rgba(36, 88, 160, 0.12) !important;
 }
 
 .quick-features .col {
     gap: 10px !important;
-    padding: 6px 12px !important;
+    padding: 8px 12px !important;
+    cursor: pointer;
+    border-radius: 12px;
+    will-change: transform, background-color;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+                background-color 0.35s ease,
+                box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.quick-features .col:hover {
+    transform: translateY(-5px) !important;
+    background-color: rgba(23, 105, 245, 0.04) !important;
 }
 
 .quick-features i {
     font-size: 32px !important;
     color: #1467f4 !important;
     display: inline-block;
-    transition: transform 0.25s ease;
+    will-change: transform, filter;
+    transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), 
+                filter 0.35s ease !important;
 }
 
 .quick-features .col:hover i {
-    transform: translateY(-3px) scale(1.08);
+    transform: translateY(-3px) scale(1.15) !important;
+    filter: drop-shadow(0 6px 14px rgba(20, 103, 244, 0.35)) !important;
 }
 
 .quick-features strong {
@@ -497,6 +516,11 @@
     letter-spacing: -0.3px;
     line-height: 1.35 !important;
     display: block;
+    transition: color 0.3s ease !important;
+}
+
+.quick-features .col:hover strong {
+    color: #1769f5 !important;
 }
 
 /* Tablet & Mobile responsive overrides */
@@ -1088,16 +1112,32 @@ body,
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4) !important;
 }
 
+[data-theme="dark"] .quick-features:hover {
+    box-shadow: 0 16px 38px rgba(0, 0, 0, 0.55), 0 0 20px rgba(56, 189, 248, 0.12) !important;
+}
+
 [data-theme="dark"] .quick-features .col {
     border-right-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+[data-theme="dark"] .quick-features .col:hover {
+    background-color: rgba(56, 189, 248, 0.08) !important;
 }
 
 [data-theme="dark"] .quick-features i {
     color: #38bdf8 !important;
 }
 
+[data-theme="dark"] .quick-features .col:hover i {
+    filter: drop-shadow(0 6px 16px rgba(56, 189, 248, 0.55)) !important;
+}
+
 [data-theme="dark"] .quick-features strong {
     color: #f8fafc !important;
+}
+
+[data-theme="dark"] .quick-features .col:hover strong {
+    color: #38bdf8 !important;
 }
 
 /* Why Choose Rentora Section */
