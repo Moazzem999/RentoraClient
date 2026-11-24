@@ -2297,3 +2297,169 @@ body,
 [data-theme="dark"] .rentora-auth-footer a {
     color: #38bdf8 !important;
 }
+
+/* ==========================================================================
+   Support Question Modal Styling
+   ========================================================================== */
+.support-modal-content {
+    border-radius: 22px !important;
+    overflow: hidden !important;
+    background: #ffffff !important;
+    border: 1px solid #dce8fa !important;
+    box-shadow: 0 25px 60px rgba(15, 34, 71, 0.2) !important;
+}
+
+.support-modal-header {
+    background: linear-gradient(135deg, #1255cc 0%, #1769f5 50%, #4338ca 100%) !important;
+    padding: 24px 28px !important;
+}
+
+.support-header-icon-box {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: grid;
+    place-items: center;
+    font-size: 24px;
+    color: #ffffff;
+    flex-shrink: 0;
+}
+
+.support-form-label {
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    color: #09265f !important;
+    margin-bottom: 6px !important;
+    letter-spacing: -0.1px;
+}
+
+.support-form-control,
+.support-form-select {
+    border-radius: 10px !important;
+    border: 1.5px solid #d2e2fa !important;
+    padding: 10px 14px !important;
+    font-size: 13.5px !important;
+    color: #09265f !important;
+    background-color: #ffffff !important;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.support-form-control:focus,
+.support-form-select:focus {
+    border-color: #1769f5 !important;
+    box-shadow: 0 0 0 3px rgba(23, 105, 245, 0.16) !important;
+    outline: none !important;
+}
+
+.support-form-control::placeholder {
+    color: #94a3b8 !important;
+    font-size: 13px;
+}
+
+.support-modal-footer {
+    border-top: 1px solid #e2eaf6 !important;
+}
+
+.support-privacy-notice {
+    font-size: 12.5px !important;
+    color: #475569 !important;
+    font-weight: 500 !important;
+}
+
+.support-submit-btn {
+    background: linear-gradient(120deg, #1769f5, #0c52c9) !important;
+    border: none !important;
+    padding: 10px 24px !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease !important;
+}
+
+.support-submit-btn:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 18px rgba(23, 105, 245, 0.35) !important;
+}
+
+.support-success-badge i {
+    font-size: 58px;
+    display: inline-block;
+    animation: supportPop 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes supportPop {
+    0% { transform: scale(0.6); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.support-success-title {
+    color: #09265f !important;
+    letter-spacing: -0.3px;
+}
+
+.support-success-desc {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Dark Mode Overrides for Support Modal */
+[data-theme="dark"] .support-modal-content {
+    background: #0d172a !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8) !important;
+}
+
+[data-theme="dark"] .support-modal-header {
+    background: linear-gradient(135deg, #0a1f4a 0%, #0e3073 50%, #201754 100%) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+[data-theme="dark"] .support-form-label {
+    color: #e2e8f0 !important;
+}
+
+[data-theme="dark"] .support-form-control,
+[data-theme="dark"] .support-form-select {
+    background-color: #081222 !important;
+    border-color: #1e2e48 !important;
+    color: #f8fafc !important;
+}
+
+[data-theme="dark"] .support-form-control:focus,
+[data-theme="dark"] .support-form-select:focus {
+    border-color: #38bdf8 !important;
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2) !important;
+}
+
+[data-theme="dark"] .support-form-control::placeholder {
+    color: #64748b !important;
+}
+
+[data-theme="dark"] .support-form-select option {
+    background-color: #0d172a;
+    color: #f8fafc;
+}
+
+[data-theme="dark"] .support-modal-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+[data-theme="dark"] .support-privacy-notice {
+    color: #94a3b8 !important;
+}
+
+[data-theme="dark"] .support-success-title {
+    color: #ffffff !important;
+}
+
+[data-theme="dark"] .support-success-desc {
+    color: #cbd5e1 !important;
+}
+
+[data-theme="dark"] #supportSuccessName,
+[data-theme="dark"] #supportSuccessEmail {
+    color: #38bdf8 !important;
+}
+

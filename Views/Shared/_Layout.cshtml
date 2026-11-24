@@ -101,6 +101,114 @@
         </div>
     </div>
 
+    <!-- Support Question / Get in Touch Modal -->
+    <div class="modal fade" id="supportModal" tabindex="-1" aria-labelledby="supportModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content support-modal-content border-0 shadow-lg">
+                <div class="modal-header support-modal-header border-0 p-4 text-white position-relative">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="support-header-icon-box">
+                            <i class="bi bi-headset"></i>
+                        </div>
+                        <div>
+                            <h4 class="modal-title fw-bold text-white mb-1" id="supportModalLabel">Get in Touch with Support</h4>
+                            <p class="mb-0 text-white-50 small">Have questions or need assistance? Fill in your details and our specialists will respond within 5 minutes.</p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-4" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                
+                <div class="modal-body p-4">
+                    <!-- Form Container -->
+                    <form id="supportInquiryForm" novalidate>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="supportFullName" class="form-label support-form-label">Full Name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control support-form-control" id="supportFullName" placeholder="e.g. John Doe" required>
+                                <div class="invalid-feedback">Please enter your full name.</div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="supportEmail" class="form-label support-form-label">Email Address <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control support-form-control" id="supportEmail" placeholder="name@example.com" required>
+                                <div class="invalid-feedback">Please enter a valid email address.</div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="supportPhone" class="form-label support-form-label">Phone / WhatsApp Number <span class="text-danger">*</span></label>
+                                <input type="tel" class="form-control support-form-control" id="supportPhone" placeholder="+880 18XXXXXXXX or +1 (555) 000-0000" required>
+                                <div class="invalid-feedback">Please provide a contact number.</div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="supportCompany" class="form-label support-form-label">Company / Property Name</label>
+                                <input type="text" class="form-control support-form-control" id="supportCompany" placeholder="e.g. Greenwood Apartments / Property Name">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="supportCategory" class="form-label support-form-label">Inquiry Topic <span class="text-danger">*</span></label>
+                                <select class="form-select support-form-select" id="supportCategory" required>
+                                    <option value="" disabled selected>Select a topic...</option>
+                                    <option value="General Inquiry">General Platform Inquiry</option>
+                                    <option value="Account & Setup">Account &amp; Onboarding Assistance</option>
+                                    <option value="Billing & Pricing">Billing, Pricing &amp; Custom Plans</option>
+                                    <option value="Feature Request">Feature Request or Feedback</option>
+                                    <option value="Technical Support">Technical Support &amp; Bug Report</option>
+                                    <option value="Data Migration">Data Migration (from Excel / Paper)</option>
+                                </select>
+                                <div class="invalid-feedback">Please select an inquiry topic.</div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="supportScale" class="form-label support-form-label">Units / Buildings Managed</label>
+                                <input type="text" class="form-control support-form-control" id="supportScale" placeholder="e.g. 15 flats or 3 buildings">
+                            </div>
+
+                            <div class="col-12">
+                                <label for="supportSubject" class="form-label support-form-label">Subject / Short Summary <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control support-form-control" id="supportSubject" placeholder="e.g. How to automate monthly SMS rent receipts?" required>
+                                <div class="invalid-feedback">Please specify a subject.</div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="supportMessage" class="form-label support-form-label">Detailed Question &amp; Requirements <span class="text-danger">*</span></label>
+                                <textarea class="form-control support-form-control" id="supportMessage" rows="3" placeholder="Please describe your question, specific requirements, or issue in detail..." required></textarea>
+                                <div class="invalid-feedback">Please describe your question or issue.</div>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer support-modal-footer px-0 pt-4 pb-0 mt-4 border-top d-flex justify-content-between align-items-center flex-wrap gap-3">
+                            <div class="support-privacy-notice text-muted small d-flex align-items-center">
+                                <i class="bi bi-shield-check text-success fs-5 me-2"></i>
+                                <span>Your information is kept strictly confidential &amp; answered within 5 mins.</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <button type="button" class="btn btn-outline-secondary rounded-pill px-4" data-bs-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary rounded-pill px-4 fw-bold support-submit-btn shadow-sm">
+                                    <i class="bi bi-send-fill me-1"></i> Submit Question
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Success State Screen -->
+                    <div id="supportSuccessState" class="d-none text-center py-4">
+                        <div class="support-success-badge mb-3">
+                            <i class="bi bi-check2-circle text-success"></i>
+                        </div>
+                        <h4 class="fw-bold support-success-title mb-2">Question Submitted Successfully!</h4>
+                        <div class="support-ticket-pill mb-3">
+                            <span class="badge bg-success-subtle text-success border border-success-subtle px-3 py-2 fs-6 fw-bold">Ticket <span id="supportTicketId">#RT-7842</span></span>
+                        </div>
+                        <p class="support-success-desc text-muted mx-auto mb-4" style="max-width: 520px;">
+                            Thank you, <strong id="supportSuccessName" class="text-dark">Property Owner</strong>. Your question has been routed to our dedicated rental management specialists. A confirmation has been sent to <strong id="supportSuccessEmail" class="text-dark">your email</strong>, and our team will get back to you within 5 minutes.
+                        </p>
+                        <button type="button" class="btn btn-success rounded-pill px-5 py-2 fw-bold" data-bs-dismiss="modal">
+                            Done
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
