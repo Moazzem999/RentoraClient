@@ -49,6 +49,31 @@
     transform: scale(1.03);
 }
 
+/* Logo Dark/Light Mode Automatic Display Switching */
+.logo-dark {
+    display: none !important;
+}
+
+.logo-light {
+    display: block !important;
+}
+
+.rentora-auth-logo-img.logo-light {
+    display: inline-block !important;
+}
+
+[data-theme="dark"] .logo-light {
+    display: none !important;
+}
+
+[data-theme="dark"] .logo-dark {
+    display: block !important;
+}
+
+[data-theme="dark"] .rentora-auth-logo-img.logo-dark {
+    display: inline-block !important;
+}
+
 .mini-brand-icon {
     width: 18px;
     height: 18px;
