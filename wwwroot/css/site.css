@@ -495,3 +495,161 @@
         font-size: 24px !important;
     }
 }
+
+/* ==========================================================================
+   Feature Cards, Values & Footer Typography Enhancements (Bigger & Bolder)
+   ========================================================================== */
+
+/* 1. Powerful Features Grid Cards */
+.feature-card {
+    padding: 26px 18px !important;
+    border-radius: 16px !important;
+    min-height: 180px !important;
+    background: rgba(255, 255, 255, 0.95) !important;
+    border: 1px solid #dce8fa !important;
+    box-shadow: 0 6px 20px rgba(39, 91, 157, 0.07) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.feature-card > i {
+    font-size: 34px !important;
+    margin-bottom: 12px !important;
+    transition: transform 0.25s ease;
+}
+
+.feature-card:hover > i {
+    transform: translateY(-2px) scale(1.08);
+}
+
+.feature-card h3 {
+    font-size: 16px !important;
+    font-weight: 800 !important;
+    color: #09265f !important;
+    margin-bottom: 8px !important;
+    letter-spacing: -0.2px;
+}
+
+.feature-card p {
+    font-size: 13px !important;
+    line-height: 1.6 !important;
+    color: #455a7f !important;
+    font-weight: 500 !important;
+    margin: 0 !important;
+}
+
+/* 2. About Rentora Values Cards */
+.value-card {
+    padding: 24px 20px !important;
+    border-radius: 16px !important;
+    gap: 8px !important;
+    background: #ffffff !important;
+    border: 1px solid #dce8fa !important;
+    box-shadow: 0 6px 20px rgba(39, 91, 157, 0.07) !important;
+    transition: transform 0.25s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-3px);
+}
+
+.value-card i {
+    font-size: 28px !important;
+    color: #1769f5 !important;
+    margin-bottom: 4px !important;
+}
+
+.value-card b {
+    font-size: 16px !important;
+    font-weight: 800 !important;
+    color: #09265f !important;
+    letter-spacing: -0.2px;
+    display: block !important;
+}
+
+.value-card small {
+    font-size: 13px !important;
+    color: #455a7f !important;
+    font-weight: 500 !important;
+    display: block !important;
+    line-height: 1.5 !important;
+}
+
+/* 3. Footer Links & Details */
+.footer-links {
+    display: flex !important;
+    gap: 32px !important;
+    align-items: center !important;
+}
+
+.footer-links a {
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    color: #0b2554 !important;
+    letter-spacing: -0.2px;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #1769f5 !important;
+}
+
+.social-links {
+    display: flex !important;
+    gap: 12px !important;
+    align-items: center !important;
+}
+
+.social-links a {
+    width: 36px !important;
+    height: 36px !important;
+    font-size: 15px !important;
+    border-radius: 50% !important;
+    background: #e8f1ff !important;
+    color: #1769f5 !important;
+    transition: all 0.2s ease;
+}
+
+.social-links a:hover {
+    background: #1769f5 !important;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+}
+
+.site-footer .copyright {
+    font-size: 12px !important;
+    color: #5c6c89 !important;
+    margin-top: 10px !important;
+}
+
+/* Responsive adjustments for Feature Cards & Values */
+@media (max-width: 767px) {
+    .feature-card {
+        padding: 20px 14px !important;
+        min-height: 165px !important;
+    }
+    
+    .feature-card h3 {
+        font-size: 14.5px !important;
+    }
+    
+    .feature-card p {
+        font-size: 12px !important;
+    }
+
+    .value-card b {
+        font-size: 15px !important;
+    }
+
+    .value-card small {
+        font-size: 12px !important;
+    }
+
+    .footer-links {
+        gap: 20px !important;
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+}
