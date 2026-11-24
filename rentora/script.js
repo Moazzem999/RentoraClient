@@ -77,16 +77,5 @@ document.addEventListener("DOMContentLoaded", () => {
       supportForm.classList.remove('d-none');
       supportSuccess.classList.add('d-none');
     });
-
-    supportModalEl.addEventListener('show.bs.modal', (e) => {
-      const triggerBtn = e.relatedTarget;
-      if (triggerBtn) {
-        const topic = triggerBtn.getAttribute('data-support-topic');
-        const categorySelect = document.getElementById('supportCategory');
-        if (topic && categorySelect) {
-          categorySelect.value = topic;
-        }
-      }
-    });
   }
 });

@@ -157,7 +157,7 @@
         <div class="row g-4 justify-content-center pricing-row">
           <div class="col-md-4"><article class="price-card"><h3>Starter</h3><p>Perfect for small landlords</p><div class="price">$9 <small>/ month</small></div><ul><li>Up to 3 Buildings</li><li>Up to 30 Flats</li><li>Basic Reports</li><li>Email Support</li></ul><a href="#get-started" class="btn btn-outline-primary rounded-pill w-100">Start Free Trial</a></article></div>
           <div class="col-md-4"><article class="price-card popular"><span class="popular-tag">Most Popular</span><h3>Professional</h3><p>For growing businesses</p><div class="price">$19 <small>/ month</small></div><ul><li>Up to 10 Buildings</li><li>Up to 100 Flats</li><li>Advanced Reports</li><li>Priority Support</li></ul><a href="#get-started" class="btn btn-success rounded-pill w-100">Start Free Trial</a></article></div>
-          <div class="col-md-4"><article class="price-card"><h3>Enterprise</h3><p>For large portfolios</p><div class="price">$49 <small>/ month</small></div><ul><li>Unlimited Buildings</li><li>Unlimited Flats</li><li>Custom Reports</li><li>Dedicated Support</li></ul><button type="button" class="btn btn-outline-primary rounded-pill w-100" data-bs-toggle="modal" data-bs-target="#supportModal" data-support-topic="Billing &amp; Pricing">Contact Us</button></article></div>
+          <div class="col-md-4"><article class="price-card"><h3>Enterprise</h3><p>For large portfolios</p><div class="price">$49 <small>/ month</small></div><ul><li>Unlimited Buildings</li><li>Unlimited Flats</li><li>Custom Reports</li><li>Dedicated Support</li></ul><button type="button" class="btn btn-outline-primary rounded-pill w-100" data-bs-toggle="modal" data-bs-target="#supportModal">Contact Us</button></article></div>
         </div>
         <p class="pricing-note"><i class="bi bi-lock-fill"></i> No hidden fees. Change or cancel your plan anytime.</p>
       </div>
@@ -378,7 +378,7 @@
         <img src="assets/rentora-logo.png" alt="Rentora — Smart Rent Management" class="rentora-footer-logo logo-light">
         <img src="assets/rentora-logo-dark.png" alt="Rentora — Smart Rent Management" class="rentora-footer-logo logo-dark">
       </a>
-      <div class="footer-links"><a href="#features">Features</a><a href="#pricing">Pricing</a><a href="#faq">About</a><a href="#get-started">Contact</a></div>
+      <div class="footer-links"><a href="#features">Features</a><a href="#pricing">Pricing</a><a href="#faq">About</a><a href="#supportModal" data-bs-toggle="modal" data-bs-target="#supportModal" role="button">Contact</a></div>
       <div class="social-links"><a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a><a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a><a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a><a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a></div>
       <small class="copyright">© 2026 Rentora. All rights reserved.</small>
     </div>
@@ -442,24 +442,6 @@
               <div class="col-md-6">
                 <label for="supportCompany" class="form-label support-form-label">Company / Property Name</label>
                 <input type="text" class="form-control support-form-control" id="supportCompany" placeholder="e.g. Greenwood Apartments / Property Name">
-              </div>
-
-              <div class="col-md-6">
-                <label for="supportCategory" class="form-label support-form-label">Inquiry Topic <span class="text-danger">*</span></label>
-                <select class="form-select support-form-select" id="supportCategory" required>
-                  <option value="" disabled selected>Select a topic...</option>
-                  <option value="General Inquiry">General Platform Inquiry</option>
-                  <option value="Account & Setup">Account &amp; Onboarding Assistance</option>
-                  <option value="Billing & Pricing">Billing, Pricing &amp; Custom Plans</option>
-                  <option value="Feature Request">Feature Request or Feedback</option>
-                  <option value="Technical Support">Technical Support &amp; Bug Report</option>
-                  <option value="Data Migration">Data Migration (from Excel / Paper)</option>
-                </select>
-                <div class="invalid-feedback">Please select an inquiry topic.</div>
-              </div>
-              <div class="col-md-6">
-                <label for="supportScale" class="form-label support-form-label">Units / Buildings Managed</label>
-                <input type="text" class="form-control support-form-control" id="supportScale" placeholder="e.g. 15 flats or 3 buildings">
               </div>
 
               <div class="col-12">
